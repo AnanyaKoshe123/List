@@ -1,0 +1,6 @@
+{
+  "name": "Save My List",
+  "description": "Secure authentication and item management CRUD application powered by Supabase and React.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
