@@ -17,7 +17,7 @@ interface ItemManagementScreenProps {
 }
 
 export const ItemManagementScreen: React.FC<ItemManagementScreenProps> = ({ user, onOpenSql, onOpenConfig }) => {
-  const [items, setItems] = useState<Item[]>([]);
+  const [items, settItems] = useState<Item[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [newItemName, setNewItemName] = useState('');
