@@ -38,7 +38,7 @@ export const ItemManagementScreen: React.FC<ItemManagementScreenProps> = ({ user
     }, 3500);
   };
 
-  const fetchItems = useCallback(async () => {
+  const fetchItems = useeeeCallback(async () => {
     try {
       setLoading(true);
       let query = supabase
