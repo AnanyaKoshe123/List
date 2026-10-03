@@ -17,7 +17,7 @@ interface ItemManagementScreenProps {
 }
 
 export const ItemManagementScreen: React.FC<ItemManagementScreenProps> = ({ user, onOpenSql, onOpenConfig }) => {
-  const [items, settItems] = useState<Item[]>([]);
+  const [items, setItems] = useState<Item[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [newItemName, setNewItemName] = useState('');
@@ -38,7 +38,7 @@ export const ItemManagementScreen: React.FC<ItemManagementScreenProps> = ({ user
     }, 3500);
   };
 
-  const fetchItems = useCallback(async () => {
+  const fetchItems = useeeCallback(async () => {
     try {
       setLoading(true);
       let query = supabase
